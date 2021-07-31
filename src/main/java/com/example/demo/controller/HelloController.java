@@ -15,8 +15,11 @@ public class HelloController {
 //     转发  前端并没有改变地址
     @RequestMapping({"/", "index.html"})
     public String redirect(){
+        String h;
         String myName;
         String her;
+        String his;
+
         return "index";
     }
 
