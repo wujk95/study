@@ -1,0 +1,10 @@
+server:
+  port: 8085
+
+
+
+my-list: 11,22,33
+
+
+demo:
+  name: wujiake

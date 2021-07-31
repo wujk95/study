@@ -1,14 +1,19 @@
 package com.example.demo;
 
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
-//@SpringBootTest
+@RunWith(SpringRunner.class)
+@SpringBootTest
 class DemoApplicationTests {
 
 
@@ -21,8 +26,12 @@ class DemoApplicationTests {
         ioc.containsBean("");
     }
 
+    @Value("#{'${my-list}'.split(',')}")
+    private List<String> myList;
+
     @Test
     void contextLoads() {
+        System.out.println(myList);
     }
 
     @Test
