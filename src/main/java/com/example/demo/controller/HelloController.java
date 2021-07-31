@@ -12,9 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    // 转发  前端并没有改变地址
-//    @RequestMapping({"/", "index.html"})
-//    public String redirect(){
-//        return "index";
-//    }
+//     转发  前端并没有改变地址
+    @RequestMapping({"/", "index.html"})
+    public String redirect(){
+        String myName;
+        return "index";
+    }
+
+
 }
