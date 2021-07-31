@@ -17,6 +17,7 @@ public class HelloController {
     public String redirect(){
         String myName;
         String her;
+        //
         return "index";
     }
 
