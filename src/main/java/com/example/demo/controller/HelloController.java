@@ -16,6 +16,7 @@ public class HelloController {
     @RequestMapping({"/", "index.html"})
     public String redirect(){
         String myName;
+        String her;
         return "index";
     }
 
